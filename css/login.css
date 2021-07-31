@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(45deg, #A6033F, #F26DAB);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-center {
+  background-color: #ffffff;
+  width: 500px;
+  padding: 30px;
+  box-shadow: 5px 5px 15px rgba(44, 1, 9, 0.5);
+  border-radius: 10px;
+}
+.container-center main h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  font-weight: 900;
+}
+.container-center main h1::after {
+  content: "";
+  width: 50px;
+  height: 6px;
+  border-radius: 4px;
+  position: absolute;
+  left: 37%;
+  bottom: 5%;
+  background: linear-gradient(45deg, #A6033F, #F26DAB);
+}
+.container-center main form .field {
+  margin-bottom: 30px;
+  position: relative;
+}
+.container-center main form .field input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  font-size: 26px;
+  margin-bottom: 30px;
+  border: none;
+}
+.container-center main form .field input::placeholder {
+  font-size: 20px;
+  padding-left: 16px;
+  color: grey;
+  font-weight: 300;
+}
+.container-center main form .field .underline::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 30%;
+}
+.container-center main form button {
+  border: none;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 10px;
+  font-size: 26px;
+  border-radius: 10px;
+  background: linear-gradient(to left, #0388A6, #F26DAB, #D90B6B);
+  cursor: pointer;
+  color: #ffffff;
+}
+.container-center main form button:hover {
+  letter-spacing: 0.5px;
+  background: linear-gradient(to right, #0388A6, #F26DAB, #D90B6B);
+  transition: 0.3s;
+}
+.container-center footer p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container-center footer .social-medias {
+  display: flex;
+  flex-direction: column;
+}
+.container-center footer .social-medias a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.container-center footer .social-medias a:first-child {
+  margin-bottom: 10px;
+}
+.container-center footer .social-medias a i {
+  margin-right: 50px;
+  font-size: 25px;
+  width: 15px;
+}
+.container-center footer .social-medias .facebook {
+  padding: 16px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #29487d, #3c5898, #9cb2ce);
+}
+.container-center footer .social-medias .facebook:hover {
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+}
+.container-center footer .social-medias .instagram {
+  padding: 16px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #c32aa3, #4c5fd7, #7232bd, #f46f30);
+}
+.container-center footer .social-medias .instagram:hover {
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=login.css.map */
