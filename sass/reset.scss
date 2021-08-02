@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 *{
     margin: 0;
     padding: 0;
@@ -7,4 +9,15 @@
 
 ul, ol, li {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    background: none;
 }

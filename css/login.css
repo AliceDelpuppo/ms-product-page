@@ -84,6 +84,7 @@ body {
   position: relative;
 }
 .container-center main form button:hover {
+  letter-spacing: 1px;
   transition: 1s;
 }
 .container-center main form button > span {
@@ -98,8 +99,12 @@ body {
   position: absolute;
   top: 30px;
   left: 50%;
+  transform: translateX(-50%);
   transition: 0.4s;
   background-color: white;
+}
+.container-center main form button > span:hover::after {
+  width: 100%;
 }
 .container-center footer p {
   font-size: 20px;

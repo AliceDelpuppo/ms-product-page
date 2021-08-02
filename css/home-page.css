@@ -10,10 +10,106 @@ ul, ol, li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+
 body {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
+  color: #4c4c4c;
+}
+
+.promotional-top-bar {
+  background: linear-gradient(45deg, #A6033F, #F26DAB);
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.container-center {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container-center header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-center header .logo img {
+  width: 60px;
+  height: auto;
+}
+.container-center header .header-search {
+  position: relative;
+}
+.container-center header .header-search input {
+  padding: 0 16px;
+  width: 500px;
+  height: 40px;
+  font-size: 16px;
+  font: 16px;
+  outline: none;
+  border: none;
+  color: #4c4c4c;
+  border-radius: 20px;
+  border: 1px solid #4c4c4c;
+}
+.container-center header .header-search input::placeholder {
+  font-size: 16px;
+  color: #a09e9e;
+}
+.container-center header .header-search input:focus {
+  background-color: #fff0f06c;
+  border: 1px solid #F26DAB;
+}
+.container-center header .header-search .search {
+  margin-right: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.container-center header .header-search .search a i {
+  font-size: 20px;
+  color: #a09e9e;
+}
+.container-center header .header-search .search a i:hover {
+  color: #F26DAB;
+}
+.container-center header .header-bar {
+  display: flex;
+  justify-content: center;
+}
+.container-center header .header-bar .header-hover {
+  padding: 5px;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #4c4c4c;
+  font-weight: 300;
+}
+.container-center header .header-bar .header-hover a:hover {
+  color: #F26DAB;
+}
+.container-center header .header-bar .header-hover a i {
+  margin: 3px;
+}
+.container-center header .header-bar .header-hover .text-center {
+  font-size: 16px;
+  font-weight: 400;
+}
+.container-center nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
