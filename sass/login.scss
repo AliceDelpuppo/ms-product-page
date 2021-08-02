@@ -10,7 +10,7 @@ body {
     height: 100vh;
     width: 100vw;
     @include flex-center;    
-}
+} 
 
 .container-center {
     background-color: $primary-color;
@@ -57,19 +57,18 @@ body {
                         padding-left: 16px;
                         color: grey;
                         font-weight: 300;
-                    }
-                } 
-
-                .underline {
-                    &::after {
-                        content:'';
-                        height: 1px;
-                        width: 100%;
-                        background-color: rgba($color: #000000, $alpha: 0.1);
-                        position: absolute;
-                        bottom: 30%;
-                    }
-                }   
+                    }                    
+                }
+                
+                &::after {
+                    content:'';
+                    height: 1px;
+                    width: 100%;
+                    background-color: rgba($color: #000000, $alpha: 0.1);
+                    position: absolute;
+                    left: 0;
+                    bottom: 30%;
+                }
             }
 
             button {
@@ -79,14 +78,44 @@ body {
                 padding: 10px;
                 font-size: 26px;
                 border-radius: 10px;
-                background: linear-gradient(to left, #0388A6, #F26DAB, #D90B6B);
+                background-color: #85C285;
                 cursor: pointer;
                 color: $primary-color;
+                position: relative;
                 
                 &:hover {
-                    letter-spacing: 0.5px;
-                    background: linear-gradient(to right, #0388A6, #F26DAB, #D90B6B);
-                    transition: 0.3s;
+                    letter-spacing: 1px;
+                    transition: 1s;
+                    // transform: rotate(2000deg) translateX(200px);                    
+                }
+                
+
+                >span {
+                    // border: 1px solid red;
+                    position: relative;
+                    padding: 0 10px;
+                    // display: inline-flex;
+                    // justify-content: center;
+
+                    &::after {
+                        content:'';
+                        width: 0;
+                        height: 4px;
+                        border-radius: 2px;
+                        position: absolute;
+                        top: 30px;
+                        left: 50%;
+                        // transform: translateX(-50%) rotate(45deg);
+                        transition: 0.4s;
+                        background-color: white;
+                    }
+                    
+                    &:hover {
+                        
+                        &::after {
+                            // width: 100%;
+                        }                                             
+                    }
                 }
             }
         }
@@ -96,17 +125,9 @@ body {
         p {
             font-size: 20px;
             text-align: center;
-            margin-bottom: 10px;    
-            
-            // &::after {
-            //     content:'';
-            //     width: 300px;
-            //     height: 4px;
-            //     background: linear-gradient(45deg, #A6033F, #F26DAB);
-            //     display: block;
-            // }
+            margin-bottom: 10px;
         }
-
+        
         .social-medias {
             display: flex;
             flex-direction: column;

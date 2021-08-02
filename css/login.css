@@ -62,12 +62,13 @@ body {
   color: grey;
   font-weight: 300;
 }
-.container-center main form .field .underline::after {
+.container-center main form .field::after {
   content: "";
   height: 1px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
+  left: 0;
   bottom: 30%;
 }
 .container-center main form button {
@@ -77,14 +78,28 @@ body {
   padding: 10px;
   font-size: 26px;
   border-radius: 10px;
-  background: linear-gradient(to left, #0388A6, #F26DAB, #D90B6B);
+  background-color: #85C285;
   cursor: pointer;
   color: #ffffff;
+  position: relative;
 }
 .container-center main form button:hover {
-  letter-spacing: 0.5px;
-  background: linear-gradient(to right, #0388A6, #F26DAB, #D90B6B);
-  transition: 0.3s;
+  transition: 1s;
+}
+.container-center main form button > span {
+  position: relative;
+  padding: 0 10px;
+}
+.container-center main form button > span::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transition: 0.4s;
+  background-color: white;
 }
 .container-center footer p {
   font-size: 20px;
