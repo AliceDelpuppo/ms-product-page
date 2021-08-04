@@ -107,7 +107,39 @@ body {
                     font-weight: 400;
                 }
             }
-        }      
+
+            .login {
+                position: relative;
+                ul {
+                    padding: 5px;
+                    border: 1px solid $text-color;
+                    border-radius: 8px;
+                    box-shadow: 3px 3px 5px $text-color;
+                    position: absolute;
+                    width: 100%;
+                    top: calc(100% + 10px);
+                    left: 50%;
+                    transform: translateX(-50%) rotateX(-90deg);
+                    transform-origin: top center;
+                    transition: 0.3s;
+                    
+                    li {                      
+                        &:not(:last-child){
+                            margin-bottom: 10px;
+                        }
+                        // a {
+                        // }
+                    }
+                }
+                &:hover {
+                    .dropdown {
+                        transform: translateX(-50%) rotateX(0);
+                    }
+                }
+            }
+        }
+        
+        
     }
 
     nav {        
