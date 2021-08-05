@@ -91,6 +91,9 @@ body {
                 font-size: 16px;
                 color: $text-color;
                 font-weight: 300;
+
+                display: flex;
+                align-items: center;
     
                 a {
                     &:hover {
@@ -102,34 +105,37 @@ body {
                     }
                 }
 
-                .text-center {
+                .login-link {
                     font-size: 16px;
                     font-weight: 400;
+                }
+            }
+
+            .header-subscribe {
+                position: relative;
+
+                .dropdown-subscription {
+                    @include dropdown;
+                    width: 200px;
+                    
+                }
+
+                &:hover {
+                    .dropdown-subscription {
+                        transform: translateX(-50%) rotateX(0);
+                    }
                 }
             }
 
             .login {
                 position: relative;
                 ul {
-                    padding: 5px;
-                    border: 1px solid $text-color;
-                    border-radius: 8px;
-                    box-shadow: 3px 3px 5px $text-color;
-                    position: absolute;
-                    width: 100%;
-                    // top: calc(100% + 1px);
-                    top: 0;
-                    left: 50%;
-                    transform: translateX(-50%) rotateX(-90deg);
-                    transform-origin: top center;
-                    transition: 0.3s;
+                    @include dropdown;
                     
                     li {                      
                         &:not(:last-child){
                             margin-bottom: 10px;
                         }
-                        // a {
-                        // }
                     }
                 }
                 &:hover {
@@ -138,13 +144,19 @@ body {
                     }
                 }
             }
-        }
-        
-        
+
+            .header-text {
+                font-size: 16px;
+            }
+
+            .header-icone {
+                padding-right: 10px;
+            }
+        }      
     }
 
-    nav {        
-        
+    nav {       
+
         ul {
             @include flex-center;
         }        

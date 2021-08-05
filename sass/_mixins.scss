@@ -8,3 +8,18 @@
     max-width: $container-width;
     margin: 0 auto;    
 }
+
+@mixin dropdown {
+    padding: 5px;
+    border: 1px solid $text-color;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba($color: $text-color, $alpha: 0.1);
+    position: absolute;
+    width: 100%;
+    top: calc(100% + 1px);
+    left: 50%;
+    transform: translateX(-50%) rotateX(-90deg);
+    transform-origin: top center;
+    transition: 0.3s;
+    background-color: white;    
+}
