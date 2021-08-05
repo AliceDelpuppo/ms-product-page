@@ -117,7 +117,8 @@ body {
                     box-shadow: 3px 3px 5px $text-color;
                     position: absolute;
                     width: 100%;
-                    top: calc(100% + 10px);
+                    // top: calc(100% + 1px);
+                    top: 0;
                     left: 50%;
                     transform: translateX(-50%) rotateX(-90deg);
                     transform-origin: top center;
