@@ -159,12 +159,16 @@ body {
   font-size: 16px;
 }
 .container-center header .header-bar .header-icone {
-  padding-right: 10px;
+  padding-right: 5px;
 }
 .container-center nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#animation > svg > g > g:nth-child(4) > g > path {
+  fill: #A6033F;
 }
 
 /*# sourceMappingURL=home-page.css.map */
